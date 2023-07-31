@@ -1,0 +1,41 @@
+:root {
+    --color-dark-slate-gray-100: #423A3A;
+    --color-desaturated-red-100: #CE9898;
+    --color-light-pink-100: #FFF1F1;
+    --color-light-coral-100: #F8BFBF;
+    --color-rosy-brown-100: #EE8B8B;
+    --color-pastel-red-100: #F96464;
+    --color-white-100: #FFFFFF;
+
+    --linear-gradient-1: linear-gradient(135deg, var(--color-light-coral-100), var(--color-rosy-brown-100));
+    --linear-gradient-2: linear-gradient(135deg, var(--color-white-100), var(--color-light-pink-100));
+
+    --ff-base: 'Josefin Sans', sans-serif;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--ff-base);
+    font-weight: var(--fw-regular);
+    font-size: 1.4rem;
+    min-height: 100vh;
+
+    display: grid;
+    place-content: center;
+}
