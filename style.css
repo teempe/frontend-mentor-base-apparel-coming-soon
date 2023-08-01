@@ -39,3 +39,25 @@ body {
     display: grid;
     place-content: center;
 }
+
+.main-container {
+    display: grid;
+    grid-template-areas: 
+        "logo"
+        "hero"
+        "cont";
+    
+    max-width: 37.5rem;
+}
+
+.main__logo-container {
+    grid-area: logo;
+}
+
+.main__hero-container {
+    grid-area: hero;
+}
+
+.main__content-container {
+    grid-area: cont;
+}
