@@ -22,23 +22,24 @@
         <main>
             <div class="main-container">
                 <div class="main__logo-container">
-                    <img src="images/logo.svg" alt="Base Apparel logo." class="main__logo">
+                    <img src="images/logo.svg" alt="Base Apparel logo." class="logo-image">
                 </div>
 
                 <div class="main__hero-container">
-                    <img src="images/hero-mobile.jpg" alt="">
+                    <img src="images/hero-mobile.jpg" alt="Portrait of female model, watching into camera and presenting jewelry on her wrist." class="hero-image">
                 </div>
 
                 <div class="main__content-container">
-                    <h1>We're coming soon</h1>
+                    <h1 class="content__title"><span class="content__title-light">We're</span> coming soon</h1>
                 
-                    <p>Hello fellow shoppers! We're currently building our new fashion store. 
+                    <p class="content__description">Hello fellow shoppers! We're currently building our new fashion store. 
                         Add your email below to stay up-to-date with announcements and our launch deals.</p>
                     
-                    <form action="">
-                        <label for="email">Email Address</label>
-                        <input type="email" name="" id="email" placeholder="Email Address">
-                        <button type="submit">
+                    <form novalidate class="form">
+                        <label for="email" class="visually-hidden">Email Address</label>
+                        <input type="email" name="email" id="email" placeholder="Email Address" class="form__input">
+                        <p class="form__input-error-msg hidden">Please provide a valid email</p>
+                        <button type="submit" class="form__btn">
                             <img src="images/icon-arrow.svg" alt="">
                         </button>
                     </form>
