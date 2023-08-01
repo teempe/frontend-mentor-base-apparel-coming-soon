@@ -52,6 +52,11 @@ body {
 
 .main__logo-container {
     grid-area: logo;
+    padding: 3.1rem 0rem 3.2rem 3.2rem;
+}
+
+.main__logo {
+    width: 10rem;
 }
 
 .main__hero-container {
