@@ -12,7 +12,6 @@
     --linear-gradient-1: linear-gradient(135deg, var(--color-light-coral-100), var(--color-rosy-brown-100));
     --linear-gradient-2: linear-gradient(135deg, var(--color-white-100), var(--color-light-pink-100));
     --linear-gradient-mask: linear-gradient(135deg, var(--color-white-50), var(--color-white-50));
-    --linear-gradient-bg: linear-gradient(150deg, #FFF 0%, #FFF4F4 100%);
 
     --ff-base: 'Josefin Sans', sans-serif;
     --fw-light: 300;
@@ -41,12 +40,14 @@ body {
     line-height: 2.2rem;
     text-align: center;
     color: var(--color-desaturated-red-100);
-    background: var(--linear-gradient-bg);
+    background: var(--linear-gradient-2);
     min-height: 100vh;
 
     display: grid;
     place-content: center;
 }
+
+/* UTILS */
 
 .visually-hidden {
     position: absolute;
@@ -60,6 +61,8 @@ body {
     display: none;
 }
 
+/* MAIN */
+
 .main-container {
     display: grid;
     grid-template-areas: 
@@ -70,6 +73,8 @@ body {
     max-width: 37.5rem;
 }
 
+/* MAIN - LOGO */
+
 .main__logo-container {
     grid-area: logo;
     padding: 3.1rem 0rem 3.2rem 3.2rem;
@@ -79,6 +84,8 @@ body {
     width: 10rem;
 }
 
+/* MAIN - HERO */
+
 .main__hero-container {
     grid-area: hero;
 }
@@ -86,6 +93,8 @@ body {
 .hero-image {
     width: 100%;
 }
+
+/* MAIN - CONTENT */
 
 .main__content-container {
     grid-area: cont;
@@ -111,7 +120,8 @@ body {
     margin-bottom: 3.2rem;
 }
 
-/* FORM */
+/* MAIN - FORM */
+
 .form {
     display: grid;
     grid-template-columns: 78% 22%;
@@ -167,6 +177,8 @@ body {
     background: var(--linear-gradient-mask), var(--linear-gradient-1);
 }
 
+/* MAIN - FORM - ERROR */
+
 .form__input-error {
     border: 0.2rem solid var(--color-pastel-red-100);
     padding: 0.9rem 0rem 0.7rem 2.2rem;
@@ -182,13 +194,16 @@ body {
     left: 2.5rem;
 }
 
+/* DESKTOP SIZE - 1440px */
 @media only screen and (min-width: 90em) {
     body {
         font-size: 1.6rem;
         line-height: 2.8rem;
         text-align: left;
-        background: url('images/bg-pattern-desktop.svg'), var(--linear-gradient-bg);
+        background: url('images/bg-pattern-desktop.svg'), var(--linear-gradient-2);
     }
+
+    /* MAIN */
 
     .main-container {
         grid-template-areas: 
@@ -199,6 +214,8 @@ body {
         max-width: 144rem;
     }
 
+    /* MAIN - LOGO */
+
     .main__logo-container {
         padding: 6.5rem 0rem 6.5rem 16.5rem;
     }
@@ -206,6 +223,8 @@ body {
     .logo-image {
         width: auto;
     }
+
+    /* MAIN - CONTENT */
 
     .main__content-container {
         padding: 7.1rem 22rem 16.2rem 16.5rem;
@@ -222,9 +241,13 @@ body {
         margin-bottom: 4rem;
     }
 
+    /* MAIN - FORM */
+
     .form__input {
         padding: 1.4rem 0rem 1.2rem 3.1rem;
     }
+
+    /* MAIN - FORM - ERROR */
 
     .form__input-error {
         padding: 1.3rem 0rem 1.1rem 3rem;
